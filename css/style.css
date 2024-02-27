@@ -1,9 +1,14 @@
 /********** Template CSS **********/
 :root {
     --primary: #4294E3;
+    --primary2: #2281e733;
+    --primary3: #3c9aff;
+    --primary4: #3c9aff;
     --secondary: #8F12FD;
-    --secondary2: #2df413;
-    --light: #F0F6FF;
+    --secondary2: #8ca510;
+    --secondary3: #9ef100;
+    --secondary4: #b8d13d;
+    --light: #102944;
     --dark: #262B47;
 }
 
@@ -57,11 +62,13 @@ h6,
 }
 
 .bg-primary-gradient {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    /* background: linear-gradient(to bottom right, var(--primary2), var(--secondary2)); */
+    background: linear-gradient(to bottom right, var(--primary3), var(--secondary3));
 }
 
 .bg-secondary-gradient {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    /* background: linear-gradient(to bottom right, var(--secondary), var(--primary)); */
+    background: linear-gradient(to bottom right, var(--secondary3), var(--primary3));
 }
 
 
@@ -94,12 +101,14 @@ h6,
 
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient::after {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    /* background: linear-gradient(to bottom right, var(--primary), var(--secondary)); */
+    background: linear-gradient(to bottom right, var(--primary4), var(--secondary4));
 }
 
 .btn.btn-secondary-gradient,
 .btn.btn-primary-gradient::after {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    /* background: linear-gradient(to bottom right, var(--secondary), var(--primary)); */
+    background: linear-gradient(to bottom right, var(--primary4), var(--secondary4));
 }
 
 .btn.btn-primary-gradient:hover::after,
@@ -265,7 +274,7 @@ h6,
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
         url(../img/bg-bottom.png),
-        linear-gradient(to bottom right, var(--primary), var(--secondary2));
+        linear-gradient(to bottom right, var(--primary2), var(--secondary2));
     background-position:
         left 0px top 0px,
         right 0px top 50%,
@@ -432,7 +441,7 @@ h6,
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
         url(../img/bg-top.png),
-        linear-gradient(to bottom right, var(--primary), var(--secondary2));
+        linear-gradient(to bottom right, var(--primary4), var(--secondary4));
     background-position:
         left 0px bottom 0px,
         right 0px top 50%,
