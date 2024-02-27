@@ -57,8 +57,8 @@
                         <a href="#home" class="nav-item nav-link active">Inicio</a>
                         <!-- <a href="#about" class="nav-item nav-link">Acerca de</a> -->
                         <a href="#feature" class="nav-item nav-link">Acerca de</a>
-                        <a href="#pricing" class="nav-item nav-link">Planes</a>
-                        <a href="#review" class="nav-item nav-link">Productos</a>
+                        <a href="#pricing" class="nav-item nav-link">Simulador credito</a>
+                        <a href="#review" class="nav-item nav-link">Comentarios</a>
                         <a href="#contact" class="nav-item nav-link">Contacto</a>
                     </div>
                     <!-- <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Start Free Trial</a> -->
@@ -285,7 +285,7 @@
 
 
         <!-- Download Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5" style="display: none;">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
@@ -326,40 +326,86 @@
         <div class="container-xxl py-5" id="pricing">
             <div class="container py-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5>
-                    <h1 class="mb-5">Choose Your Plan</h1>
+                    <!-- <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5> -->
+                    <h1 class="mb-5">Simula tu préstamo personal</h1>
                 </div>
                 <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                    <!-- <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
                         <li class="nav-item">
-                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Monthly</button>
+                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Mensual</button>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Yearly</button>
+                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Anual</button>
                         </li>
-                    </ul>
+                    </ul> -->
                     <div class="tab-content text-start">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
                             <div class="row g-4">
-                                <div class="col-lg-4">
+                                <div class="col-lg-12">
                                     <div class="bg-light rounded">
                                         <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
+                                            <!-- <h4 class="text-primary-gradient mb-1">Starter Plan</h4> -->
+                                            <span>Ingresa los datos solicitados para simular tu prestamo</span>
                                         </div>
                                         <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>14.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                            <div class="row">
+                                            <div class="col-md-4">
+                                                <form>
+                                                    <div class="row g-3">
+                                                    <div class="col-md-12">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="montoprestamo" placeholder="Monto de prestamo">
+                                                            <label for="montoprestamo">Monto de prestamo</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <b>¿cada cuando pagarias?</b>
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                                            <label class="btn btn-outline-primary" for="btnradio1">Semanal</label>
+                                                          
+                                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                                            <label class="btn btn-outline-primary" for="btnradio2">quincenal</label>
+                                                          
+                                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                                            <label class="btn btn-outline-primary" for="btnradio3">Mensual</label>
+
+                                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                                            <label class="btn btn-outline-primary" for="btnradio4">Anual</label>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="montopago" placeholder="Monto de prestamo">
+                                                            <label for="montopago">Cuanto quieres pagarias?</label>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <b>Plazos para liquidar tu deuda</b>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <b>Tasa de % interes promedio</b>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <b>Pago Mensual</b>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Simular credito</a>
                                         </div>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="col-lg-4">
                                     <div class="bg-light rounded border">
                                         <div class="border-bottom p-4 mb-4">
@@ -398,8 +444,10 @@
                                         </div>
                                     </div>
                                 </div>
+                                -->
                             </div>
                         </div>
+                        <!--
                         <div id="tab-2" class="tab-pane fade p-0">
                             <div class="row g-4">
                                 <div class="col-lg-4">
@@ -461,6 +509,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -472,8 +521,8 @@
         <div class="container-xxl py-5" id="review">
             <div class="container py-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">Testimonial</h5>
-                    <h1 class="mb-5">What Say Our Clients!</h1>
+                    <h5 class="text-primary-gradient fw-medium">Comentarios</h5>
+                    <h1 class="mb-5">Opiniones de nuestros clientes</h1>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item rounded p-4">
@@ -491,7 +540,9 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">
+                            Increíble servicio! YOPECEL superó todas mis expectativas al brindarme un préstamo rápido y sin complicaciones. El proceso fue sencillo y eficiente, y el equipo siempre estuvo dispuesto a responder mis preguntas. Definitivamente recomendaré sus servicios a amigos y familiares
+                        </p>
                     </div>
                     <div class="testimonial-item rounded p-4">
                         <div class="d-flex align-items-center mb-4">
@@ -508,7 +559,9 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">
+                            Estoy completamente satisfecho con mi experiencia con YOPECEL. Obtener un préstamo nunca fue tan fácil. Desde el primer contacto hasta la aprobación final, el personal fue amable, profesional y diligente. Sin duda, volveré a confiar en ellos en el futuro
+                        </p>
                     </div>
                     <div class="testimonial-item rounded p-4">
                         <div class="d-flex align-items-center mb-4">
@@ -525,7 +578,9 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">
+                            Quiero expresar mi gratitud a YOPECEL por su excelente atención al cliente y su rápida respuesta a mis necesidades financieras. Gracias a su asesoramiento experto, pude obtener el préstamo que necesitaba para cubrir gastos inesperados. ¡Son verdaderos profesionales en lo que hacen!
+                        </p>
                     </div>
                     <div class="testimonial-item rounded p-4">
                         <div class="d-flex align-items-center mb-4">
@@ -542,7 +597,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Una experiencia excepcional! YOPECEL no solo me ayudó a obtener el préstamo que necesitaba, sino que también lo hizo de manera rápida y eficiente.</p>
                     </div>
                 </div>
             </div>
@@ -560,7 +615,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-9">
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
-                            <p class="text-center mb-4">¡Estamos aquí para ayudarte a alcanzar tus metas financieras! Completa nuestro formulario de contacto y déjanos saber cómo podemos asistirte. Ya sea que necesites información sobre nuestros productos financieros, tengas preguntas sobre tu préstamo actual, o desees explorar nuevas oportunidades de inversión, nuestro equipo experto está listo para brindarte el apoyo necesario.  <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                            <p class="text-center mb-4">¡Estamos aquí para ayudarte a alcanzar tus metas financieras! Completa nuestro formulario de contacto y déjanos saber cómo podemos asistirte. Ya sea que necesites información sobre nuestros productos financieros, tengas preguntas sobre tu préstamo actual, o desees explorar nuevas oportunidades de inversión, nuestro equipo experto está listo para brindarte el apoyo necesario.</p>
                             <form>
                                 <div class="row g-3">
                                     <div class="col-md-12">
